@@ -1611,3 +1611,54 @@ body.nav-open {
   display: block;
 }
 
+/* ============ Section Feature Images & Balanced Grid ============ */
+.section-feature-img {
+  margin-top: 48px;
+  width: 100%;
+  height: 380px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+}
+.section-feature-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.why-content-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 48px;
+  align-items: stretch;
+}
+.why-media {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+  min-height: 380px;
+}
+.why-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .section-feature-img {
+    height: 260px;
+    margin-top: 32px;
+  }
+  .why-content-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .why-media {
+    min-height: 260px;
+  }
+}
+
+
